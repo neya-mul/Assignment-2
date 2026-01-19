@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+/* shared styles */
+.flex{
+    display: flex;
+}
+#gradient{
+    background: linear-gradient(#F7E93F ,#FB09B4 ,#9100F8);
+    background-clip: text;
+   color: transparent;
+}
+.background-gradient{
+    background: linear-gradient(to top right, #F7E93F,#FB09B4,#9100F8);
+}
+.color-white{
+    color: white;
+}
+/* main styles */
+
+/* header design */
+.header{
+    /* border: 1px solid; */
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.navbar{
+    justify-content: space-evenly;
+    background-color: #412567;
+    padding: 26px;
+    align-items: center;
+}
+.navbar ul{
+    gap: 32px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.navbar button{
+    border: none;
+    border-radius: 10000px;
+    padding: 12px 16px;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
