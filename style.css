@@ -334,6 +334,11 @@ hr{
       margin-top: -50px;
       margin-left: -10px;
     }
+    .sec1-cards{
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
     .section2{
         margin: 0 auto;
         padding: 0;
