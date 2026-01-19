@@ -289,6 +289,30 @@ hr{
        border-radius: 50%;
        padding: 5px;
  }
+ .footer{
+    padding-top: 110px;
+    max-width: 1600px;
+    background: url(./assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 412px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+ }
+ .footer h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+ }
+
+ .footer-logos{
+   justify-content: center;
+   gap: 30px;
+   align-items: center;
+   margin-bottom: 40px;
+ }
 @media screen and (max-width:576px) {
     .header-elements{
         /* width: 100%;
@@ -343,6 +367,10 @@ hr{
    }
    .sec4-elements{
     flex-direction: column;
+   }
+   .footer-logos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
    }
 }
 
