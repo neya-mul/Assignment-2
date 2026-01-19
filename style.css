@@ -163,7 +163,65 @@ hr{
 .sec1-card h1{
     color: #00FF88;
 }
-
+ .section2{
+    background-color: #230E3D;
+    max-width: 1600px;
+    padding: 120px 200px;
+    margin: 0 auto;
+    
+ }
+ .section2 h1{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+     color: #FFFFFF;
+     margin-bottom: 20px;
+ }
+ .sec2-cards *{
+    background-color: #351165;
+    color: #FFFFFF;
+ }
+ .sec2-card1{
+    border-radius: 30px;
+    grid-area: card1;
+    padding: 20px;
+    /* margin: 0 auto;     */
+ }
+ .sec2-card2{
+    border-radius: 30px;
+    grid-area: card2;
+     padding: 20px;
+   
+ }
+ .sec2-card3{
+    border-radius: 30px;
+    grid-area: card3;
+     padding: 20px;
+     
+ }
+ .sec2-card4{
+    border-radius: 30px;
+    grid-area: card4;
+     padding: 20px;
+     
+ }
+ .sec2-card5{
+    border-radius: 30px;
+    grid-area: card5;
+     padding: 20px;
+     
+ }
+ .sec2-cards{
+    
+    margin: 0 auto;
+    max-width: 1400px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "card1 card2 card2"
+    "card1 card3 card3"
+    "card4 card4 card5";
+ }
 @media screen and (max-width:576px) {
     .header-elements{
         /* width: 100%;
@@ -176,24 +234,36 @@ hr{
         flex-direction: column;
     }
     .header-image{
-        /* border: 2px solid; */
         width: 150px;
         height: 150px;
         margin-top: -50px;
     }
     .header-image img{
       width: 70px;
-      /* border: 1px solid; */
-      /* margin-right: 20px; */
-      /* margin-left: -5px; */
       margin-top: -50px;
       margin-left: -10px;
     }
-
-    .sec1-cards{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+    .section2{
+        margin: 0 auto;
+        padding: 0;
+        /* padding: 100px; */
+        
     }
+   .sec2-cards{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   }
+   .sec2-card1,
+   .sec2-card2,
+   .sec2-card3,
+   .sec2-card4,
+   .sec2-card5{
+    padding: 0;
+    width: 300px;
+    margin: 0 auto;
+    padding: 40px;
+   }
 }
 
 /* large device media query */
