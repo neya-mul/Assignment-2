@@ -231,6 +231,14 @@ hr{
     max-width: 1600px;
     background-color: #1A0B2E;
     margin: 0 auto;
+    /* padding: 120px 200px; */
+ }
+ #sec3-heading{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
 
  }
  .sec3-cards{
@@ -250,6 +258,36 @@ hr{
  } 
  .sec3-card h1,.sec3-card p{
     padding: 10px;
+ }
+ .section4{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    padding: 120px 200px;
+   
+ }
+ #sec4-heading{
+    /* border: 1px solid; */
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+ }
+ .sec4-elements{
+    background-color: #351165;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+     border-radius: 40px;
+ }
+ .sec4-details img{
+       border: .5px solid rgb(120, 118, 118);
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       padding: 5px;
  }
 @media screen and (max-width:576px) {
     .header-elements{
@@ -289,9 +327,22 @@ hr{
    .sec2-card4,
    .sec2-card5{
     padding: 0;
-    width: 300px;
+    width: 300px; 
     margin: 0 auto;
     padding: 40px;
+   }
+
+   .sec3-cards{
+    padding: 10px;
+    flex-direction: column;
+    /* border: 2px solid wheat; */
+   }
+   .section4{
+    padding: 10px;
+    text-align: center;
+   }
+   .sec4-elements{
+    flex-direction: column;
    }
 }
 
@@ -302,6 +353,10 @@ hr{
         grid-template-rows: "card1 card2"
         "card3 card3"
         "card4 card5" ;
+    }
+    .sec4-elements{
+        margin: 0 auto;
+        width: 800px;
     }
     
 }
