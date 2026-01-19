@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+.hide{
+    display: none;
+}
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -39,7 +41,7 @@
 }
 .navbar{
     justify-content: space-evenly;
-    background-color: #412567;
+    background-color: #1A0B2E;
     padding: 26px;
     align-items: center;
 }
@@ -315,10 +317,12 @@ hr{
  }
 @media screen and (max-width:576px) {
     .header-elements{
-        /* width: 100%;
-        padding: 20px; */
-       width: 440px;
-       height: 400px;
+        max-width: 100%;
+        padding-top: 70px;
+        padding-bottom: 10px;
+       /* width: 440px; */
+       height: 350px;
+       object-fit: cover;
        background-position: center;
     }
     .navbar{
@@ -327,12 +331,21 @@ hr{
     .header-image{
         width: 150px;
         height: 150px;
-        margin-top: -50px;
+        margin-top: -40px;
+    }
+    #btn1,#btn2{
+        padding: 5px 10px;
     }
     .header-image img{
       width: 70px;
       margin-top: -50px;
       margin-left: -10px;
+    }
+    #new-badge{
+        /* border: 1px solid wheat; */
+        position: relative;
+        right: 100px;
+        bottom: 20px;
     }
     .sec1-cards{
         /* flex-direction: column; */
@@ -360,7 +373,9 @@ hr{
     margin: 0 auto;
     padding: 40px;
    }
-
+    .section3{
+        padding-top: 20px;
+    }
    .sec3-cards{
     padding: 10px;
     flex-direction: column;
@@ -372,6 +387,14 @@ hr{
    }
    .sec4-elements{
     flex-direction: column;
+   }
+   .footer{
+    /* padding-top: 0; */
+    padding: 30px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-position: center
    }
    .footer-logos{
     display: grid;
