@@ -25,6 +25,10 @@
 .color-white{
     color: white;
 }
+/*  */
+.color-green{
+    color: #00FF88;
+}
 /* main styles */
 
 /* header design */
@@ -222,6 +226,31 @@ hr{
     "card1 card3 card3"
     "card4 card4 card5";
  }
+
+ .section3{
+    max-width: 1600px;
+    background-color: #1A0B2E;
+    margin: 0 auto;
+
+ }
+ .sec3-cards{
+    justify-content: center;
+    gap: 30px;
+ }
+ .sec3-card{
+    max-width: 380px;
+    background-color: #250D44;
+    color: #FFFFFF;
+    border-radius: 30px;
+    /* padding: 20px; */
+ }
+ .sec3-card iframe{
+    width: 100%;
+     border-radius: 30px 30px 0px 0px;
+ } 
+ .sec3-card h1,.sec3-card p{
+    padding: 10px;
+ }
 @media screen and (max-width:576px) {
     .header-elements{
         /* width: 100%;
@@ -268,5 +297,11 @@ hr{
 
 /* large device media query */
 @media screen and (min-width:992px) {
+    .sec2-cards{
+        display: grid;
+        grid-template-rows: "card1 card2"
+        "card3 card3"
+        "card4 card5" ;
+    }
     
 }
