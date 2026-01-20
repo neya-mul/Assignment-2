@@ -204,6 +204,10 @@ hr{
     background-color: #351165;
     color: #FFFFFF;
  }
+ .section2 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
  .sec2-card1{
     border-radius: 30px;
     grid-area: card1;
@@ -305,6 +309,9 @@ hr{
      border-radius: 40px;
      animation: shadow 7s linear infinite;
      
+ }
+ .sec4-details h1 ,.sec4-details p{
+    margin-bottom: 10px;
  }
  .sec4-details img{
        border: .5px solid rgb(120, 118, 118);
