@@ -35,7 +35,6 @@
 
 /* header design */
 .header{
-    /* border: 1px solid; */
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -79,10 +78,9 @@
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* height: 760px; */
+    
 }
 .header-image{
-    /* border: 1px solid white; */
     max-width: 350px;
     margin: 0 auto;
     background: url(./assets/hero-circle.png);
@@ -94,21 +92,15 @@
     
 }
 .header-image img{
-      /* border: 1px solid white; */
       max-width: 115px;
-      /* text-align: center; */
-      /* margin: 0 auto; */
       margin-left: 70px;
       
 }
 #new-badge{
-    /* border: 1px solid; */
-    /* margin-bottom: 40px; */
     margin-top: -190px;
     margin-left: 140px;
 }
 .header-details{
-    /* border: 1px solid wheat; */
     max-width: 550px;
     margin: 10px auto;
     text-align: center;
@@ -159,6 +151,8 @@
     border: none;
     color: #FFFFFF;
 }
+
+/* section1 designs */
 .section1{
     max-width: 1600px;
     margin: 0 auto;
@@ -187,6 +181,7 @@ hr{
 .sec1-card h1{
     color: #00FF88;
 }
+/* section2 designs */
  .section2{
     background-color: #230E3D;
     max-width: 1600px;
@@ -209,7 +204,7 @@ hr{
     border-radius: 30px;
     grid-area: card1;
     padding: 20px;
-    /* margin: 0 auto;     */
+    
  }
  .sec2-card2{
     border-radius: 30px;
@@ -235,8 +230,7 @@ hr{
      padding: 20px;
      
  }
- .sec2-cards{
-    
+ .sec2-cards{   
     margin: 0 auto;
     max-width: 1400px;
     display: grid;
@@ -246,13 +240,12 @@ hr{
     "card1 card3 card3"
     "card4 card4 card5";
  }
-
+/* section3 designs */
  .section3{
     max-width: 1600px;
     background-color: #1A0B2E;
     margin: 0 auto;
     padding-top: 70px;
-    /* padding: 120px 200px; */
  }
  #sec3-heading{
     max-width: 1200px;
@@ -271,7 +264,6 @@ hr{
     background-color: #250D44;
     color: #FFFFFF;
     border-radius: 30px;
-    /* padding: 20px; */
  }
  .sec3-card iframe{
     width: 100%;
@@ -280,6 +272,7 @@ hr{
  .sec3-card h1,.sec3-card p{
     padding: 10px;
  }
+ /* section4 designs */
  .section4{
     max-width: 1600px;
     margin: 0 auto;
@@ -289,7 +282,6 @@ hr{
    
  }
  #sec4-heading{
-    /* border: 1px solid; */
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
@@ -304,7 +296,6 @@ hr{
     max-width: 1200px;
     margin: 20px auto;
      border-radius: 40px;
-     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
      animation: shadow 7s linear infinite;
      
  }
@@ -315,6 +306,7 @@ hr{
        border-radius: 50%;
        padding: 5px;
  }
+ /* footer designs */
  .footer{
     padding-top: 110px;
     max-width: 1600px;
@@ -340,18 +332,17 @@ hr{
    margin-bottom: 40px;
    
  }
+ /* small device media query */
 @media screen and (max-width:576px) {
     .header-elements{
         max-width: 100%;
         padding-top: 70px;
         padding-bottom: 10px;
-       /* width: 440px; */
-       height: 350px;
-       object-fit: cover;
-       background-position: center;
+        height: 350px;
+        object-fit: cover;
+        background-position: center;
     }
     .navbar{
-        /* flex-direction: column; */
         justify-content: space-between;
     }
     .navbar ul,.navbar button{
@@ -374,7 +365,6 @@ hr{
       margin-left: -10px;
     }
     #new-badge{
-        /* border: 1px solid wheat; */
         position: relative;
         right: 100px;
         bottom: 20px;
@@ -383,15 +373,12 @@ hr{
         padding: 20px;
     }
     .sec1-cards{
-        /* flex-direction: column; */
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
     .section2{
         margin: 0 auto;
-        padding: 0;
-        /* padding: 100px; */
-        
+        padding: 0;   
     }
    .sec2-cards{
     margin: 0 auto;
@@ -414,7 +401,6 @@ hr{
    .sec3-cards{
     padding: 15px;
     flex-direction: column;
-    /* border: 2px solid wheat; */
    }
    .section4{
     padding: 30px;
@@ -422,12 +408,10 @@ hr{
    }
    .sec4-elements{
     flex-direction: column;
-    /* padding: 30px; */
    }
    .footer{
     background: url(./assets/footermobileImage.png);
-    /* padding-top: 0; */
-    padding: 30px;
+    padding: 20px;
     max-width: 100%;
     height: 300px;
     object-fit: contain;
@@ -435,12 +419,35 @@ hr{
    }
    .footer-logos{
     display: grid;
-    /* gap: 5px; */
     grid-template-columns: repeat(2,1fr);
     margin-top: -8px;
    }
 }
 
+/* medium device media query */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .sec2-cards{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column; 
+    }
+    .sec3-cards{
+       flex-direction: column; 
+    }
+    .sec3-card{
+        margin: 0 auto;
+    }
+    .section4{
+        padding: 10px;
+    }
+    .sec4-elements{
+        border: 1px solid;
+        flex-direction: column;
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 /* animation */
 @keyframes shadow {
     0%{
