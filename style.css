@@ -63,6 +63,9 @@
     color: #FFFFFF;
     font-size: 0.9rem;
 }
+#hamburger{
+    display: none;
+}
 .header-elements{
     max-width: 1600px;
     background: url(./assets/hero-bg.png);
@@ -326,7 +329,14 @@ hr{
        background-position: center;
     }
     .navbar{
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content: space-between;
+    }
+    .navbar ul,.navbar button{
+        display: none;
+    }
+    #hamburger{
+          display: block;
     }
     .header-image{
         width: 150px;
@@ -374,7 +384,7 @@ hr{
     padding: 40px;
    }
     .section3{
-        padding-top: 20px;
+        padding: 10px;
     }
    .sec3-cards{
     padding: 10px;
