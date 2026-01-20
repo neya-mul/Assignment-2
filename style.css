@@ -27,7 +27,7 @@
 .color-white{
     color: white;
 }
-/*  */
+
 .color-green{
     color: #00FF88;
 }
@@ -61,6 +61,8 @@
     align-items: center;
     color: #FFFFFF;
     font-size: 0.9rem;
+    /* transition: background 8s; */
+    transition: color .4s , border .5s;
 }
 .navbar button:hover{
     background: none;
@@ -124,6 +126,7 @@
     color: #FFFFFF;
     font-size: 1rem;
     align-items: center;
+    transition: color .4s , border .5s;
 }
 #btn1 img{
     width: 15px;
@@ -142,6 +145,7 @@
       font-size: 1rem;
     align-items: center;
     background: none;
+    transition: color 1s;
 }
 #btn2 img{
     width: 15px;
@@ -264,6 +268,9 @@ hr{
     background-color: #250D44;
     color: #FFFFFF;
     border-radius: 30px;
+ }
+ .sec3-card:hover{
+    box-shadow: 2px 2px 20px rgb(106, 100, 100);
  }
  .sec3-card iframe{
     width: 100%;
