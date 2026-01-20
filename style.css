@@ -63,6 +63,11 @@
     color: #FFFFFF;
     font-size: 0.9rem;
 }
+.navbar button:hover{
+    background: none;
+    border:.1px solid #FB09B4;
+    color: #FB09B4;
+}
 #hamburger{
     display: none;
 }
@@ -86,9 +91,7 @@
     background-repeat: no-repeat;
     position: relative;
     padding: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    
 }
 .header-image img{
       /* border: 1px solid white; */
@@ -115,10 +118,12 @@
     color: #FFFFFF;
     font-size: 3rem;
     margin-bottom: 10px;
+   
 }
 .header-details p{
     color: #FFFFFF;
       margin-bottom: 10px;
+      animation: color-change 3s linear infinite;
 }
 #btn1{
     border: none;
@@ -131,6 +136,12 @@
 #btn1 img{
     width: 15px;
 }
+#btn1:hover{
+     background: none;
+    border:.1px solid #FB09B4;
+    color: #FB09B4;
+}
+
 #btn2{
     border: 1px solid #00FF88;
     border-radius: 10000px;
@@ -143,7 +154,11 @@
 #btn2 img{
     width: 15px;
 }
-
+#btn2:hover{
+    background:linear-gradient(to top right, #F7E93F,#FB09B4,#9100F8);
+    border: none;
+    color: #FFFFFF;
+}
 .section1{
     max-width: 1600px;
     margin: 0 auto;
@@ -236,6 +251,7 @@ hr{
     max-width: 1600px;
     background-color: #1A0B2E;
     margin: 0 auto;
+    padding-top: 70px;
     /* padding: 120px 200px; */
  }
  #sec3-heading{
@@ -244,7 +260,7 @@ hr{
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 30px;
-
+    animation: color-change 5s linear infinite;
  }
  .sec3-cards{
     justify-content: center;
@@ -277,6 +293,8 @@ hr{
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
+    font-size: 3rem;
+    
  }
  .sec4-elements{
     background-color: #351165;
@@ -286,6 +304,9 @@ hr{
     max-width: 1200px;
     margin: 20px auto;
      border-radius: 40px;
+     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: shadow 7s linear infinite;
+     
  }
  .sec4-details img{
        border: .5px solid rgb(120, 118, 118);
@@ -317,6 +338,7 @@ hr{
    gap: 30px;
    align-items: center;
    margin-bottom: 40px;
+   
  }
 @media screen and (max-width:576px) {
     .header-elements{
@@ -412,17 +434,23 @@ hr{
    }
 }
 
-/* large device media query */
-@media screen and (min-width:992px) {
-    .sec2-cards{
-        display: grid;
-        grid-template-rows: "card1 card2"
-        "card3 card3"
-        "card4 card5" ;
+/* animation */
+
+
+@keyframes shadow {
+    0%{
+        box-shadow: 2px 2px 20px #00FF88;
     }
-    .sec4-elements{
-        margin: 0 auto;
-        width: 800px;
+    25%{
+        box-shadow: -3px -3px 20px #F7E93F;
     }
-    
+    50%{
+        box-shadow: 2px 2px 20px #FB09B4;
+    }
+    75%{
+        box-shadow: -3px -3px 20px #00FF88;
+    }
+    100%{
+        box-shadow: 2px 2px 20px #F7E93F ;
+    }
 }
